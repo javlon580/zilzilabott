@@ -1,11 +1,13 @@
 {
-  "build": {
-    "builder": "DOCKERFILE",
-    "dockerfilePath": "Dockerfile"
+  "packages": {
+    "python": "3.11"
   },
   "deploy": {
-    "startCommand": "",
-    "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 10
-  }
+    "startCommand": "python bot.py"
+  },
+  "include": [
+    "**/*.py",
+    "DATA/**/*",
+    "requirements.txt"
+  ]
 }
