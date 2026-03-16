@@ -1,5 +1,5 @@
 python-telegram-bot==20.7
 geopandas==0.14.3
-shapely==2.0.3
+shapely==2.0.6  # Changed from 2.0.3 to 2.0.6
 fiona==1.9.5
 pyproj==3.6.1
