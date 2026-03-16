@@ -4,5 +4,18 @@
   },
   "deploy": {
     "startCommand": "python bot.py"
+  },
+  "steps": {
+    "build": {
+      "inputs": [
+        {
+          "from": "local",
+          "include": ["**/*.py", "DATA/**/*", "requirements.txt"]
+        }
+      ],
+      "commands": [
+        "pip install -r requirements.txt"
+      ]
+    }
   }
 }
