@@ -1,16 +1,11 @@
 {
-  "packages": {
-    "python": "3.11"
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "python bot.py"
-  },
-  "include": [
-    "**/*.py",
-    "DATA/**/*",
-    "requirements.txt",
-    "config.py",
-    "advice_data.py",
-    "shapefile_utils.py"
-  ]
+    "startCommand": "",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  }
 }
