@@ -5,17 +5,12 @@
   "deploy": {
     "startCommand": "python bot.py"
   },
-  "steps": {
-    "build": {
-      "inputs": [
-        {
-          "from": "local",
-          "include": ["**/*.py", "DATA/**/*", "requirements.txt"]
-        }
-      ],
-      "commands": [
-        "pip install -r requirements.txt"
-      ]
-    }
-  }
+  "include": [
+    "**/*.py",
+    "DATA/**/*",
+    "requirements.txt",
+    "config.py",
+    "advice_data.py",
+    "shapefile_utils.py"
+  ]
 }
